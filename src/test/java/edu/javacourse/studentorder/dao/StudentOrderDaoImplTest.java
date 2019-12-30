@@ -2,14 +2,11 @@ package edu.javacourse.studentorder.dao;
 
 import edu.javacourse.studentorder.domain.*;
 import edu.javacourse.studentorder.exception.DaoException;
-import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import java.time.LocalDate;
 import java.util.List;
-
-import static org.junit.Assert.*;
 
 public class StudentOrderDaoImplTest {
 
@@ -80,7 +77,7 @@ public class StudentOrderDaoImplTest {
         child1.setIssueDepartment(ro2);
         child1.setAddress(address);
         // Ребенок
-        Child child2 = new Child("Васильев", "Александр", "Павлович", LocalDate.of(2016, 1, 11));
+        Child child2 = new Child("Васильев", "Александр", "Павлович", LocalDate.of(2018, 10, 24));
         child2.setCertificateNumber("" + (400000 + id));
         child2.setIssueDate(LocalDate.of(2018,7,19));
         RegisterOffice ro3 = new RegisterOffice(3L, "", "");
